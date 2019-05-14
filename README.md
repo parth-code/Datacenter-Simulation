@@ -2,7 +2,7 @@
 ## Vineet Patel, Parth Mehul Desai, Heng Li
 
 
-###Dockerifle
+###Dockerfile
 You can pull the image from `https://cloud.docker.com/u/vineet1999/repository/docker/vineet1999/cs441_group_project`
 Do build the image run `docker build -t <image name you would like> .`
 Make sure when you build, your current directory is the root directory
