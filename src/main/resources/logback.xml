@@ -1,0 +1,24 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%boldWhite(%d{HH:mm:ss.SSS}) %highlight(%-5level) %cyan(%logger{15}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT+Call" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%boldWhite(%d{HH:mm:ss.SSS}) %highlight(%-5level) %cyan(%logger{15}) - %msg%n%yellow(%caller{4})</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <logger name="test" level="debug" additivity="false">
+        <appender-ref ref="STDOUT+Call"/>
+    </logger>
+
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+</configuration>
