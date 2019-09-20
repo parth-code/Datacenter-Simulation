@@ -1,5 +1,5 @@
 # Course Project
-## Vineet Patel, Parth Mehul Desai, Heng Li
+#### By Vineet Patel, Parth Mehul Desai, Heng Li
 
 ###Dockerfile
 You can pull the image from `https://cloud.docker.com/u/vineet1999/repository/docker/vineet1999/cs441_group_project`
